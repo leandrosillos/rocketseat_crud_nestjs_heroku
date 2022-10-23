@@ -7,7 +7,10 @@ import { configuration } from './config/configuration'
 
 @Module({
   imports: [
-    //MongooseModule.forRoot(`mongodb+srv://${configuration.mongodb.username}:${configuration.mongodb.password}@${configuration.mongodb.clustername}.odqmwhq.mongodb.net/test`,
+    MongooseModule.forRoot(
+      //`mongodb+srv://${configuration.mongodb.username}:${configuration.mongodb.password}@${configuration.mongodb.clustername}.odqmwhq.mongodb.net/test`
+      `mongodb+srv://leandro_sillos:asdf321@rocketseatcrudnestjsher.odqmwhq.mongodb.net/test`
+    ),
     UsersModule
   ],
   controllers: [AppController],
